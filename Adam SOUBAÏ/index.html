@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>TechLearn | homepage</title>
+</head>
+<body>
+    <!-- cette partie permet de creer une chekboxe qui peut etre cocher et decocher avec des images pour pouvoir
+    ouvrir et fermer un menu  -->
+    <input type="checkbox" id="chekboxe">
+        <label for="chekboxe">   
+            <!-- les svg sont une manière de creer des images  -->
+            <svg id="menu" class="svg1" viewBox="0 0 100 80" width="40" height="40">
+                <rect width="100" height="20"></rect>
+                <rect y="30" width="100" height="20"></rect>
+                <rect y="60" width="100" height="20"></rect>
+            </svg>
+            <svg id="fermer_menu"  xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" viewBox="0 0 16 16"> <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708z"/> </svg>        
+        </label>
+    <!-- code de la barre fixé au haut du site     -->
+    <div id="head" class="head">
+        <a class="nom" href="index.html">TechLearn</a>
+        <p class="menu_titre">MENU</p>
+    </div>
+    <!-- Code de la barre déroulante -->
+    <header class="navbar">
+        <h2 class="titre2">MENU</h2>
+        <!-- liste -->
+        <ul>
+            <li><a href="python.html" class="onglet">Python</a></li>
+            <li><a href="c++.html" class="onglet">C++ </a></li>
+            <li><a href="tarif.html" class="onglet">Tarifs</a></li>
+            <li><a class="onglet" href="#footer">contacts</a></li>
+        </ul>
+    </header>
+    <!-- code principale de la page -->
+    <div class="page"> 
+        <div class="fond">
+            <h1>FORMATIONS</h1>
+            <div class="trait"></div>
+            <h2 >EN LIGNE</h2>
+            <img src="img/dechirure 1.png" alt="transition entre partie" class="transition">
+        </div>
+        <!-- nouvelle section -->
+        <div class="qui">
+            <h2 class="mini_titre">Qui sommes-nous ?</h2>
+            <img class="image2" alt="image d'un bureau"  src="img/1.avif">
+            <p class="text">Notre entreprise de formation informatique en programmation est spécialisée dans la transmission de connaissances et de compétences en matière de développement de logiciels. Nous offrons des formations sur mesure, adaptées aux besoins de chaque apprenant, que ce soit pour les débutants ou les professionnels confirmés. Notre équipe de formateurs experts dispose d'une solide expérience en programmation et est à la pointe des dernières technologies et tendances du secteur. Nous proposons des formations pratiques et interactives qui permettent à nos apprenants de développer des compétences clés dans des langages de programmation. Notre objectif est de fournir une formation de qualité supérieure et de préparer nos apprenants à réussir dans leur carrière de développeur.   </p>
+            <img src="img/dechirure 2.png" alt="transition entre partie" class="transition2">
+        </div>
+        <!-- nouvelle section -->
+        <div class="cour">
+            <h2 class="mini_titre">Nos formations !</h2>
+            <a href="python.html"><img src="img/pyhton.png" class="img_cour" alt="python"></a>
+            <a href="c++.html" ><img src="img/c++.png" class="img_cour" alt="C++"  ></a>
+            <img src="img/dechirure noir.png" alt="transition entre partie" class="transition3">
+        </div> 
+
+    </div>
+
+    <!-- footer (bas du site) -->
+    <footer id="footer">
+        <p>Vous pouvez nous contacter sur ces médias :</p>
+        <a class="btn1" href="https://twitter.com/home" target="_blank"><img src="img/twitter.png" alt="logo twitter" class="logo-footer"> </a>
+        <a class="btn2" href="https://www.instagram.com/?hl=fr" target="_blank"><img src="img/instagram.png" alt="logo instagram" class="logo-footer"></a>
+        <a class="btn3" href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><img src="img/gmail.png" alt="logo gmail" class="logo-footer"> </a>
+        <p class="copyright">Copyright ®</p>
+        <a class="copyright1" rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a> <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"></a>.
+    </footer>
+</body>
+</html>
